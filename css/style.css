@@ -670,3 +670,123 @@ h1, h2, h3, .nt-brand { font-family: var(--nt-font-title); }
   font-weight: 700;
   cursor: pointer;
 }
+
+/* ── 17. STAT CARDS ── */
+.nt-stat-card {
+  background: var(--nt-bg-widget);
+  border: 1px solid var(--nt-border);
+  border-radius: 16px;
+  padding: 1.25rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.nt-stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--nt-glow-purple);
+}
+.nt-stat-icon {
+  width: 52px; height: 52px;
+  border-radius: 14px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+.nt-stat-icon--purple { background: rgba(124,58,237,0.15); color: var(--nt-purple-light); }
+.nt-stat-icon--cyan   { background: rgba(6,182,212,0.15);  color: var(--nt-cyan-light); }
+.nt-stat-label { font-size: 0.8rem; color: var(--nt-text-muted); margin-bottom: 4px; }
+.nt-stat-value { font-family: var(--nt-font-title); font-size: 1.5rem; font-weight: 700; color: var(--nt-text); margin-bottom: 2px; }
+.nt-stat-change { font-size: 0.78rem; margin: 0; }
+
+/* ── 18. WIDGET ── */
+.nt-widget {
+  background: var(--nt-bg-widget);
+  border: 1px solid var(--nt-border);
+  border-radius: 16px;
+  overflow: hidden;
+}
+.nt-widget-header {
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--nt-border);
+  background: rgba(124,58,237,0.05);
+}
+.nt-widget-title {
+  font-family: var(--nt-font-title);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--nt-text);
+  margin: 0;
+}
+
+/* ── 19. TABLA ── */
+.nt-table {
+  color: var(--nt-text);
+  margin: 0;
+}
+.nt-table thead th {
+  background: rgba(124,58,237,0.1);
+  color: var(--nt-text-muted);
+  font-family: var(--nt-font-title);
+  font-size: 0.72rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  border-color: var(--nt-border);
+  padding: 0.85rem 1rem;
+}
+.nt-table tbody td {
+  border-color: rgba(124,58,237,0.1);
+  padding: 0.85rem 1rem;
+  vertical-align: middle;
+  font-size: 0.9rem;
+  transition: background 0.2s ease;
+}
+.nt-table tbody tr {
+  transition: background 0.2s ease;
+}
+.nt-table tbody tr:hover {
+  background: rgba(6, 182, 212, 0.06);
+  box-shadow: inset 3px 0 0 var(--nt-cyan);
+}
+
+/* Status badges */
+.nt-status {
+  font-family: var(--nt-font-title);
+  font-size: 0.68rem;
+  letter-spacing: 0.5px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-weight: 700;
+}
+.nt-status--active { background:rgba(34,197,94,0.15); color:#4ade80; border:1px solid rgba(34,197,94,0.3); }
+.nt-status--done   { background:rgba(6,182,212,0.15);  color:var(--nt-cyan-light); border:1px solid var(--nt-border-cyan); }
+.nt-status--review { background:rgba(251,191,36,0.15); color:#fbbf24; border:1px solid rgba(251,191,36,0.3); }
+.nt-status--pause  { background:rgba(239,68,68,0.15);  color:#f87171; border:1px solid rgba(239,68,68,0.3); }
+
+/* ── 20. PROGRESS BARS ── */
+.nt-progress {
+  background: rgba(124,58,237,0.1);
+  border-radius: 99px;
+}
+.nt-progress-bar {
+  background: linear-gradient(90deg, var(--nt-purple), var(--nt-purple-light));
+  border-radius: 99px;
+  position: relative;
+  overflow: hidden;
+}
+.nt-progress-bar::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.2) 50%, transparent 100%);
+  animation: shimmer 2s infinite;
+}
+.nt-progress-bar--cyan    { background: linear-gradient(90deg, var(--nt-cyan-dark), var(--nt-cyan-light)); }
+.nt-progress-bar--success { background: linear-gradient(90deg, #16a34a, #4ade80); }
+.nt-progress-bar--warn    { background: linear-gradient(90deg, #b45309, #fbbf24); }
+
+@keyframes shimmer {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(200%); }
+}
+
