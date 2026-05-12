@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NovaTech — Next Generation Solutions</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top nt-navbar" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand nt-brand" href="#">
+        <span class="nt-logo-icon"><i class="bi bi-hexagon-fill"></i></span>
+        Nova<span class="nt-brand-accent">Tech</span>
+      </a>
+      <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false"
+        aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-center gap-1">
+          <li class="nav-item"><a class="nav-link nt-nav-link" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link nt-nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link nt-nav-link" href="#contacto">Contacto</a></li>
+          <li class="nav-item">
+            <a class="btn nt-btn-outline btn-sm ms-2" href="dashboard.html">
+              <i class="bi bi-grid-fill me-1"></i>Dashboard
+            </a>
+          </li>
+          <!-- Toggle dark/light -->
+          <li class="nav-item ms-2">
+            <button class="nt-theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+              <i class="bi bi-moon-stars-fill" id="themeIcon"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION
+       (contenido en commit 2) -->
+  <section id="hero" class="nt-hero">
+    <!-- Partículas decorativas (CSS puro) -->
+    <div class="nt-particles" aria-hidden="true">
+      <span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span>
+    </div>
+    <div class="container h-100 d-flex align-items-center justify-content-center">
+      <div class="nt-hero-content text-center">
+        <p class="nt-hero-tagline">Bienvenido al futuro</p>
+        <h1 class="nt-hero-title">
+          Soluciones <span class="nt-glitch" data-text="Next-Gen">Next-Gen</span><br>
+          para el mundo digital
+        </h1>
+        <p class="nt-hero-subtitle">
+          Tecnología de vanguardia. Diseño sin límites. Resultados que trascienden.
+        </p>
+        <div class="nt-hero-cta d-flex gap-3 justify-content-center flex-wrap mt-4">
+          <a href="#servicios" class="btn nt-btn-primary btn-lg">
+            <i class="bi bi-arrow-down-circle me-2"></i>Explorar Servicios
+          </a>
+          <a href="dashboard.html" class="btn nt-btn-outline btn-lg">
+            <i class="bi bi-grid me-2"></i>Ver Dashboard
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Línea de scroll -->
+    <div class="nt-scroll-indicator" aria-hidden="true">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       SERVICIOS
+       (contenido en commit 3)
+  ════════════════════════════════════════════ -->
+  <section id="servicios" class="nt-section">
+    <div class="container">
+      <div class="nt-section-header text-center mb-5">
+        <span class="nt-section-label">Lo que hacemos</span>
+        <h2 class="nt-section-title">Nuestros <span class="nt-text-accent">Servicios</span></h2>
+        <p class="nt-section-desc">Combinamos innovación y precisión para entregar soluciones que marcan la diferencia.</p>
+      </div>
+      <!-- Grid asimétrico (CSS Grid nativo, no Bootstrap) -->
+      <div class="nt-services-grid">
+
+        <article class="card nt-card nt-card--wide" aria-label="Servicio de IA">
+          <div class="card-body">
+            <div class="nt-card-icon"><i class="bi bi-cpu-fill"></i></div>
+            <h3 class="card-title">Inteligencia Artificial</h3>
+            <p class="card-text">Modelos predictivos, NLP y visión por computador integrados en tu flujo de trabajo.</p>
+            <a href="#contacto" class="nt-card-link">Saber más <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="card nt-card" aria-label="Servicio de Ciberseguridad">
+          <div class="card-body">
+            <div class="nt-card-icon nt-icon-cyan"><i class="bi bi-shield-lock-fill"></i></div>
+            <h3 class="card-title">Ciberseguridad</h3>
+            <p class="card-text">Auditorías, pentesting y arquitecturas zero-trust para proteger lo que más importa.</p>
+            <a href="#contacto" class="nt-card-link">Saber más <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="card nt-card" aria-label="Servicio Cloud">
+          <div class="card-body">
+            <div class="nt-card-icon nt-icon-cyan"><i class="bi bi-cloud-fill"></i></div>
+            <h3 class="card-title">Cloud & DevOps</h3>
+            <p class="card-text">Infraestructura escalable en AWS, GCP y Azure. CI/CD desde el día uno.</p>
+            <a href="#contacto" class="nt-card-link">Saber más <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="card nt-card nt-card--wide" aria-label="Servicio de Blockchain">
+          <div class="card-body">
+            <div class="nt-card-icon"><i class="bi bi-link-45deg"></i></div>
+            <h3 class="card-title">Blockchain & Web3</h3>
+            <p class="card-text">Smart contracts, tokenización de activos y plataformas DeFi construidas sobre fundamentos sólidos.</p>
+            <a href="#contacto" class="nt-card-link">Saber más <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="card nt-card" aria-label="Servicio de Data">
+          <div class="card-body">
+            <div class="nt-card-icon"><i class="bi bi-bar-chart-fill"></i></div>
+            <h3 class="card-title">Data Engineering</h3>
+            <p class="card-text">Pipelines de datos en tiempo real, DataLakes y cuadros de mando interactivos.</p>
+            <a href="#contacto" class="nt-card-link">Saber más <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="card nt-card" aria-label="Servicio de UX">
+          <div class="card-body">
+            <div class="nt-card-icon nt-icon-cyan"><i class="bi bi-vector-pen"></i></div>
+            <h3 class="card-title">UX / UI Design</h3>
+            <p class="card-text">Diseño centrado en el usuario con sistemas de diseño escalables y accesibles.</p>
+            <a href="#contacto" class="nt-card-link">Saber más <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </article>
+
+      </div><!-- /nt-services-grid -->
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       PORTFOLIO / GALERÍA
+       (commit 4)
+  ════════════════════════════════════════════ -->
+  <section id="portfolio" class="nt-section nt-section--alt">
+    <div class="container">
+      <div class="nt-section-header text-center mb-5">
+        <span class="nt-section-label">Nuestros proyectos</span>
+        <h2 class="nt-section-title">Portfolio <span class="nt-text-accent">Destacado</span></h2>
+        <p class="nt-section-desc">Haz clic en cada proyecto para descubrir los detalles.</p>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Proyecto 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="nt-gallery-item" data-bs-toggle="modal" data-bs-target="#modal1"
+               role="button" tabindex="0" aria-label="Ver proyecto Analytix AI">
+            <img src="img/dark-ui.jpg" alt="Dashboard de analítica con UI oscura" class="nt-gallery-img" />
+            <div class="nt-gallery-overlay">
+              <i class="bi bi-zoom-in"></i>
+              <span>Analytix AI</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="nt-gallery-item" data-bs-toggle="modal" data-bs-target="#modal2"
+               role="button" tabindex="0" aria-label="Ver proyecto Smart City Platform">
+            <img src="img/cyberpunk-city.jpg" alt="Ciudad cyberpunk con neones" class="nt-gallery-img" />
+            <div class="nt-gallery-overlay">
+              <i class="bi bi-zoom-in"></i>
+              <span>Smart City Platform</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="nt-gallery-item" data-bs-toggle="modal" data-bs-target="#modal3"
+               role="button" tabindex="0" aria-label="Ver proyecto IoT Infrastructure">
+            <img src="img/circuit-board.jpg" alt="Placa de circuitos con luz azul" class="nt-gallery-img" />
+            <div class="nt-gallery-overlay">
+              <i class="bi bi-zoom-in"></i>
+              <span>IoT Infrastructure</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 4 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="nt-gallery-item" data-bs-toggle="modal" data-bs-target="#modal4"
+               role="button" tabindex="0" aria-label="Ver proyecto AR Platform">
+            <img src="img/hologram.jpg" alt="Interfaz holográfica futurista" class="nt-gallery-img" />
+            <div class="nt-gallery-overlay">
+              <i class="bi bi-zoom-in"></i>
+              <span>AR Platform</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 5 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="nt-gallery-item" data-bs-toggle="modal" data-bs-target="#modal5"
+               role="button" tabindex="0" aria-label="Ver proyecto DevOps Suite">
+            <img src="img/terminal.jpg" alt="Terminal de código flotante" class="nt-gallery-img" />
+            <div class="nt-gallery-overlay">
+              <i class="bi bi-zoom-in"></i>
+              <span>DevOps Suite</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 6 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="nt-gallery-item" data-bs-toggle="modal" data-bs-target="#modal6"
+               role="button" tabindex="0" aria-label="Ver proyecto ML Engine">
+            <img src="img/neural.jpg" alt="Red neuronal luminosa" class="nt-gallery-img" />
+            <div class="nt-gallery-overlay">
+              <i class="bi bi-zoom-in"></i>
+              <span>ML Engine</span>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /row -->
+    </div>
+
+    <!-- MODALES Bootstrap -->
+    <div class="modal fade" id="modal1" tabindex="-1" aria-label="Analytix AI" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content nt-modal">
+          <div class="modal-header nt-modal-header">
+            <h5 class="modal-title"><i class="bi bi-bar-chart-fill me-2 nt-text-accent"></i>Analytix AI</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/dark-ui.jpg" alt="Dashboard Analytix AI" class="img-fluid rounded mb-3" />
+            <p>Plataforma de analítica de negocio con modelos de ML integrados. Visualización en tiempo real, alertas predictivas y reporting automatizado para equipos de datos.</p>
+            <div class="d-flex gap-2 flex-wrap">
+              <span class="badge nt-badge">Python</span>
+              <span class="badge nt-badge">TensorFlow</span>
+              <span class="badge nt-badge nt-badge--cyan">React</span>
+              <span class="badge nt-badge nt-badge--cyan">FastAPI</span>
+            </div>
+          </div>
+          <div class="modal-footer nt-modal-footer">
+            <button class="btn nt-btn-outline" data-bs-dismiss="modal">Cerrar</button>
+            <a href="#contacto" class="btn nt-btn-primary" data-bs-dismiss="modal">Solicitar demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal2" tabindex="-1" aria-label="Smart City Platform" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content nt-modal">
+          <div class="modal-header nt-modal-header">
+            <h5 class="modal-title"><i class="bi bi-buildings-fill me-2 nt-text-accent"></i>Smart City Platform</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/cyberpunk-city.jpg" alt="Smart City" class="img-fluid rounded mb-3" />
+            <p>Sistema integrado de gestión urbana: tráfico, energía y servicios ciudadanos en una única plataforma IoT con dashboards en tiempo real.</p>
+            <div class="d-flex gap-2 flex-wrap">
+              <span class="badge nt-badge">IoT</span>
+              <span class="badge nt-badge">MQTT</span>
+              <span class="badge nt-badge nt-badge--cyan">Grafana</span>
+              <span class="badge nt-badge nt-badge--cyan">Kubernetes</span>
+            </div>
+          </div>
+          <div class="modal-footer nt-modal-footer">
+            <button class="btn nt-btn-outline" data-bs-dismiss="modal">Cerrar</button>
+            <a href="#contacto" class="btn nt-btn-primary" data-bs-dismiss="modal">Solicitar demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal3" tabindex="-1" aria-label="IoT Infrastructure" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content nt-modal">
+          <div class="modal-header nt-modal-header">
+            <h5 class="modal-title"><i class="bi bi-cpu me-2 nt-text-accent"></i>IoT Infrastructure</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/circuit-board.jpg" alt="IoT Infrastructure" class="img-fluid rounded mb-3" />
+            <p>Arquitectura de dispositivos conectados con edge computing, gestión de firmware OTA y protocolos de comunicación seguros para entornos industriales.</p>
+            <div class="d-flex gap-2 flex-wrap">
+              <span class="badge nt-badge">C/C++</span>
+              <span class="badge nt-badge">RTOS</span>
+              <span class="badge nt-badge nt-badge--cyan">AWS IoT</span>
+              <span class="badge nt-badge nt-badge--cyan">LoRaWAN</span>
+            </div>
+          </div>
+          <div class="modal-footer nt-modal-footer">
+            <button class="btn nt-btn-outline" data-bs-dismiss="modal">Cerrar</button>
+            <a href="#contacto" class="btn nt-btn-primary" data-bs-dismiss="modal">Solicitar demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal4" tabindex="-1" aria-label="AR Platform" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content nt-modal">
+          <div class="modal-header nt-modal-header">
+            <h5 class="modal-title"><i class="bi bi-headset me-2 nt-text-accent"></i>AR Platform</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/hologram.jpg" alt="AR Platform" class="img-fluid rounded mb-3" />
+            <p>Plataforma de realidad aumentada para formación técnica y mantenimiento industrial. Superposición de información en tiempo real sobre entornos físicos.</p>
+            <div class="d-flex gap-2 flex-wrap">
+              <span class="badge nt-badge">Unity</span>
+              <span class="badge nt-badge">ARCore</span>
+              <span class="badge nt-badge nt-badge--cyan">WebXR</span>
+              <span class="badge nt-badge nt-badge--cyan">Three.js</span>
+            </div>
+          </div>
+          <div class="modal-footer nt-modal-footer">
+            <button class="btn nt-btn-outline" data-bs-dismiss="modal">Cerrar</button>
+            <a href="#contacto" class="btn nt-btn-primary" data-bs-dismiss="modal">Solicitar demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal5" tabindex="-1" aria-label="DevOps Suite" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content nt-modal">
+          <div class="modal-header nt-modal-header">
+            <h5 class="modal-title"><i class="bi bi-terminal-fill me-2 nt-text-accent"></i>DevOps Suite</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/terminal.jpg" alt="DevOps Suite" class="img-fluid rounded mb-3" />
+            <p>Suite de herramientas DevOps: pipelines CI/CD, monitorización de infraestructura, gestión de secretos y despliegues blue-green automatizados.</p>
+            <div class="d-flex gap-2 flex-wrap">
+              <span class="badge nt-badge">GitLab CI</span>
+              <span class="badge nt-badge">Terraform</span>
+              <span class="badge nt-badge nt-badge--cyan">Docker</span>
+              <span class="badge nt-badge nt-badge--cyan">Prometheus</span>
+            </div>
+          </div>
+          <div class="modal-footer nt-modal-footer">
+            <button class="btn nt-btn-outline" data-bs-dismiss="modal">Cerrar</button>
+            <a href="#contacto" class="btn nt-btn-primary" data-bs-dismiss="modal">Solicitar demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal6" tabindex="-1" aria-label="ML Engine" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content nt-modal">
+          <div class="modal-header nt-modal-header">
+            <h5 class="modal-title"><i class="bi bi-diagram-3-fill me-2 nt-text-accent"></i>ML Engine</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/neural.jpg" alt="ML Engine" class="img-fluid rounded mb-3" />
+            <p>Motor de Machine Learning como servicio: entrenamiento distribuido, versionado de modelos, A/B testing y serving de inferencia de baja latencia.</p>
+            <div class="d-flex gap-2 flex-wrap">
+              <span class="badge nt-badge">PyTorch</span>
+              <span class="badge nt-badge">MLflow</span>
+              <span class="badge nt-badge nt-badge--cyan">Ray</span>
+              <span class="badge nt-badge nt-badge--cyan">ONNX</span>
+            </div>
+          </div>
+          <div class="modal-footer nt-modal-footer">
+            <button class="btn nt-btn-outline" data-bs-dismiss="modal">Cerrar</button>
+            <a href="#contacto" class="btn nt-btn-primary" data-bs-dismiss="modal">Solicitar demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       FORMULARIO DE CONTACTO
+       (commit 5)
+  ════════════════════════════════════════════ -->
+  <section id="contacto" class="nt-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="nt-section-header text-center mb-5">
+            <span class="nt-section-label">¿Hablamos?</span>
+            <h2 class="nt-section-title">Contacta con <span class="nt-text-accent">NovaTech</span></h2>
+          </div>
+          <form id="contactForm" class="nt-form needs-validation" novalidate aria-label="Formulario de contacto">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="nombre" class="form-label">Nombre <span aria-hidden="true">*</span></label>
+                <input type="text" class="form-control nt-input" id="nombre"
+                  placeholder="Ada Lovelace" required minlength="2"
+                  aria-required="true" />
+                <div class="valid-feedback">¡Perfecto!</div>
+                <div class="invalid-feedback">Introduce tu nombre (mín. 2 caracteres).</div>
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label">Email <span aria-hidden="true">*</span></label>
+                <input type="email" class="form-control nt-input" id="email"
+                  placeholder="ada@novatech.io" required
+                  aria-required="true" />
+                <div class="valid-feedback">¡Perfecto!</div>
+                <div class="invalid-feedback">Introduce un email válido.</div>
+              </div>
+              <div class="col-12">
+                <label for="servicio" class="form-label">Servicio de interés</label>
+                <select class="form-select nt-input" id="servicio" aria-label="Selecciona un servicio">
+                  <option value="" selected>Selecciona un servicio...</option>
+                  <option value="ia">Inteligencia Artificial</option>
+                  <option value="cyber">Ciberseguridad</option>
+                  <option value="cloud">Cloud & DevOps</option>
+                  <option value="blockchain">Blockchain & Web3</option>
+                  <option value="data">Data Engineering</option>
+                  <option value="ux">UX / UI Design</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label for="mensaje" class="form-label">Mensaje <span aria-hidden="true">*</span></label>
+                <textarea class="form-control nt-input" id="mensaje" rows="5"
+                  placeholder="Cuéntanos tu proyecto..." required minlength="20"
+                  aria-required="true"></textarea>
+                <div class="valid-feedback">¡Mensaje recibido!</div>
+                <div class="invalid-feedback">El mensaje debe tener al menos 20 caracteres.</div>
+              </div>
+              <div class="col-12 d-grid">
+                <button type="submit" class="btn nt-btn-primary btn-lg">
+                  <i class="bi bi-send-fill me-2"></i>Enviar Mensaje
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════ -->
+  <footer class="nt-footer">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          <span class="nt-brand fs-5">Nova<span class="nt-brand-accent">Tech</span></span>
+          <p class="mb-0 mt-1 text-muted small">© 2026 NovaTech. Todos los derechos reservados.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <a href="#" class="nt-footer-link me-3" aria-label="GitHub"><i class="bi bi-github fs-5"></i></a>
+          <a href="#" class="nt-footer-link me-3" aria-label="LinkedIn"><i class="bi bi-linkedin fs-5"></i></a>
+          <a href="#" class="nt-footer-link" aria-label="Twitter/X"><i class="bi bi-twitter-x fs-5"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast de confirmación de formulario -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index:9999">
+    <div id="formToast" class="toast nt-toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header nt-toast-header">
+        <i class="bi bi-check-circle-fill me-2 text-success"></i>
+        <strong class="me-auto">NovaTech</strong>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Cerrar"></button>
+      </div>
+      <div class="toast-body">
+        ¡Mensaje enviado! Te responderemos en menos de 24h. 🚀
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
