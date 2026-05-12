@@ -790,3 +790,74 @@ h1, h2, h3, .nt-brand { font-family: var(--nt-font-title); }
   100% { transform: translateX(200%); }
 }
 
+/* ── 21. ACCORDION ── */
+.nt-accordion-item {
+  background: transparent;
+  border: 1px solid var(--nt-border) !important;
+  border-radius: 10px !important;
+  margin-bottom: 6px;
+  overflow: hidden;
+}
+.nt-accordion-btn {
+  background: rgba(124,58,237,0.08) !important;
+  color: var(--nt-text) !important;
+  font-family: var(--nt-font-title);
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  padding: 0.85rem 1rem;
+  border-radius: 10px !important;
+  box-shadow: none !important;
+}
+.nt-accordion-btn:not(.collapsed) {
+  background: linear-gradient(135deg, rgba(124,58,237,0.2), rgba(6,182,212,0.1)) !important;
+  color: var(--nt-cyan-light) !important;
+  border-bottom: 1px solid var(--nt-border);
+}
+.nt-accordion-btn::after {
+  filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg);
+}
+.nt-accordion-body {
+  background: transparent;
+  padding: 1rem;
+  font-size: 0.875rem;
+  color: var(--nt-text);
+}
+
+/* ── 22. OFFCANVAS ── */
+.nt-offcanvas {
+  background: var(--nt-bg-2) !important;
+  border-right: 1px solid var(--nt-border) !important;
+  width: 280px !important;
+}
+.nt-offcanvas-header {
+  border-bottom: 1px solid var(--nt-border);
+  padding: 1.2rem 1.5rem;
+}
+
+/* ── 23. TOOLTIPS ── */
+.tooltip .tooltip-inner {
+  background: var(--nt-bg-3);
+  border: 1px solid var(--nt-border);
+  color: var(--nt-cyan-light);
+  font-family: var(--nt-font-title);
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+  padding: 6px 12px;
+  box-shadow: var(--nt-glow-cyan);
+}
+.tooltip .tooltip-arrow::before { border-top-color: var(--nt-border) !important; }
+
+/* ── 24. SCROLLBAR ── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--nt-bg-2); }
+::-webkit-scrollbar-thumb {
+  background: var(--nt-purple);
+  border-radius: 99px;
+}
+::-webkit-scrollbar-thumb:hover { background: var(--nt-purple-light); }
+
+/* ── 25. RESPONSIVE HELPERS ── */
+@media (max-width: 767px) {
+  .nt-hero-title { font-size: 2rem; }
+  .nt-section     { padding: 60px 0; }
+}
